@@ -30,7 +30,7 @@ resource "aws_iam_group_membership" "team" {
 resource "aws_iam_group_membership" "examle" {
     name = "marketing-membership"
     users = [
-        aws_iam_user.zam.name,
+        aws_iam_user.zam.name
     ]
 
     group = aws_iam_group.marketing.name
